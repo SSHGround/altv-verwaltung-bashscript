@@ -1,0 +1,15 @@
+[Unit]
+Description=alt:V Server
+After=network.target
+[Service]
+WorkingDirectory=/home/altvserver/
+User=root
+Group=root
+Type=simple
+ExecStart=/home/altvserver/altv-server
+ExecStop=kill -15 $MAINPID
+PIDFile=/home/altvserver/altv.pid
+RestartSec=15
+Restart=always
+[Install]
+WantedBy=multi-user.target
