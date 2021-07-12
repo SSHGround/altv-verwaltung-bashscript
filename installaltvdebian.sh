@@ -19,7 +19,7 @@ systemctl enable altv.service
 clear
 
 # Erledige Restliche Sachen
-cd ..
+cd /root/
 rm installaltvdebian.sh
 
 #######  FERTIG ######
